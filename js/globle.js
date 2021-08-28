@@ -1,0 +1,13 @@
+$(document).ready(function(){
+	$(".subNav").mouseover(function(e){
+		e.stopPropagation();
+		$(this).addClass("active").children("ul").stop().slideDown();
+		$(this).find("ul").children("li").mouseover(function(e){
+			$(this).find("ul").stop().slideDown();
+		}).mouseout(function(){
+			$(this).find("ul").stop().slideUp();
+		});
+	}).mouseout(function(){
+		$(this).removeClass("active").find("ul").stop().slideUp();
+	});
+});

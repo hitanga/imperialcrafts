@@ -1,0 +1,58 @@
+.nav-justified {
+    width:auto; float:left;
+}
+.nav-justified > li{width:auto;}
+.nav-justified > li > a {
+    border-bottom: 1px solid #D5D5D5;
+    color: #424449;
+	font-size:1.071em;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    text-align: center;
+	text-transform:lowercase;
+}
+.nav-justified > .active > a, .nav-justified > .active > a:hover, .nav-justified > .active > a:focus {
+    background: rgb(0,196,224); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(0,196,224) 0%, rgb(0,126,166) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,196,224)), color-stop(100%,rgb(0,126,166))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(0,196,224) 0%,rgb(0,126,166) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(0,196,224) 0%,rgb(0,126,166) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(0,196,224) 0%,rgb(0,126,166) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(0,196,224) 0%,rgb(0,126,166) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c4e0', endColorstr='#007ea6',GradientType=0 ); /* IE6-9 */
+
+	color:#fff;
+}
+.nav-justified > li:first-child > a {
+    border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+    border-bottom: 0 none;
+}
+@media (min-width: 768px) {
+.nav-justified {
+    max-height: 49px;
+}
+.nav-justified > li > a {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #D5D5D5;
+}
+.nav-justified > li:first-child > a {
+    border-left: 0 none;
+    border-radius: 5px 0 0 5px;
+	margin:-1px 0 0 -1px; padding:13px 16px 13px 15px; border:1px solid #D5D5D5;
+}
+.nav-justified > li > a:hover, .nav-justified > li.active > a{margin:-1px 0 0 -1px; padding:13px 16px 13px 15px; border:1px solid #00a4c2; background-color: #00c4e0;
+    background-image: -moz-linear-gradient(center top , #00c4e0 0%, #007ea6 100%);
+	color:#fff;}
+.nav-justified > li:last-child > a {
+    border-right: 0 none;
+}
+}
+@media screen and (min-width: 768px) {
+.masthead, .marketing, .footer {
+    padding-left: 0;
+    padding-right: 0;
+}
+}
